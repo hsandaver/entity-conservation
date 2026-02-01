@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Annotation Editor</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+        font-family: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+        color: #1e2a35;
+      }
+      .annotation-editor {
+        background: #ffffff;
+        border: 1px solid rgba(33, 52, 71, 0.16);
+        border-radius: 16px;
+        padding: 12px 12px 10px 12px;
+        box-shadow: 0 10px 20px rgba(31, 42, 55, 0.08);
+      }
+      .annotation-toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid rgba(33, 52, 71, 0.12);
+        margin-bottom: 8px;
+      }
+      .annotation-toolbar button {
+        border: 1px solid rgba(33, 52, 71, 0.18);
+        background: #f9f5ef;
+        color: #1e2a35;
+        border-radius: 8px;
+        padding: 4px 8px;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .annotation-toolbar button:hover {
+        background: #f1eae1;
+      }
+      .annotation-body {
+        min-height: 150px;
+        padding: 10px 12px;
+        border: 1px solid rgba(33, 52, 71, 0.12);
+        border-radius: 12px;
+        background: #fbf8f2;
+        outline: none;
+        line-height: 1.5;
+      }
+      .annotation-body.is-empty:before {
+        content: attr(data-placeholder);
+        color: #8b97a6;
+      }
+      .annotation-actions {
+        display: flex;
+        gap: 8px;
+        justify-content: flex-end;
+        padding-top: 10px;
+      }
+      .annotation-actions button {
+        border-radius: 999px;
+        border: 1px solid rgba(33, 52, 71, 0.18);
+        padding: 6px 14px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 12px;
+      }
+      .annotation-actions .save {
+        background: linear-gradient(135deg, #d06a4c, #e7c07b);
+        color: #1e2a35;
+      }
+      .annotation-actions .clear {
+        background: #ffffff;
+        color: #1e2a35;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="annotation-editor">
+      <div class="annotation-toolbar">
+        <button type="button" data-cmd="bold"><strong>B</strong></button>
+        <button type="button" data-cmd="italic"><em>I</em></button>
+        <button type="button" data-cmd="underline"><u>U</u></button>
+        <button type="button" data-cmd="insertUnorderedList">Bullets</button>
+        <button type="button" data-cmd="insertOrderedList">Numbered</button>
+        <button type="button" data-cmd="formatBlock">Quote</button>
+        <button type="button" data-cmd="createLink">Link</button>
+        <button type="button" data-cmd="removeFormat">Clear formatting</button>
+      </div>
+      <div id="annotation-body" class="annotation-body" contenteditable="true"></div>
+      <div class="annotation-actions">
+        <button type="button" class="clear" id="annotation-clear">Clear</button>
+        <button type="button" class="save" id="annotation-save">Save annotation</button>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const renderHandlers = [];
+        const StreamlitShim = {
+          RENDER_EVENT: "streamlit:render",
+          events: {
+            addEventListener: (type, handler) => {
+              if (type === "streamlit:render") {
+                renderHandlers.push(handler);
+              }
+            },
+          },
+          setComponentReady: () => {
+            window.parent.postMessage(
+              {
+                isStreamlitMessage: true,
+                type: "streamlit:componentReady",
+                apiVersion: 1,
+              },
+              "*"
+            );
+          },
+          setComponentValue: (value) => {
+            window.parent.postMessage(
+              {
+                isStreamlitMessage: true,
+                type: "streamlit:setComponentValue",
+                value: value,
+              },
+              "*"
+            );
+          },
+          setFrameHeight: (height) => {
+            const nextHeight = height || document.body.scrollHeight;
+            window.parent.postMessage(
+              {
+                isStreamlitMessage: true,
+                type: "streamlit:setFrameHeight",
+                height: nextHeight,
+              },
+              "*"
+            );
+          },
+        };
+        window.Streamlit = StreamlitShim;
+
+        window.addEventListener("message", (event) => {
+          const data = event.data || {};
+          if (!data || data.type !== "streamlit:render") {
+            return;
+          }
+          const detail = {
+            args: data.args || {},
+            disabled: data.disabled,
+            theme: data.theme,
+          };
+          renderHandlers.forEach((handler) => handler({ detail }));
+        });
+      })();
+    </script>
+    <script>
+      const editor = document.getElementById("annotation-body");
+      let currentValue = "";
+
+      document.execCommand("defaultParagraphSeparator", false, "p");
+
+      const updatePlaceholder = () => {
+        const text = (editor.textContent || "").trim();
+        if (!text) {
+          editor.classList.add("is-empty");
+        } else {
+          editor.classList.remove("is-empty");
+        }
+      };
+
+      const applyValue = (value) => {
+        const nextValue = value || "";
+        if (nextValue === currentValue) {
+          updatePlaceholder();
+          return;
+        }
+        currentValue = nextValue;
+        editor.innerHTML = nextValue;
+        updatePlaceholder();
+      };
+
+      const setHeight = () => {
+        if (window.Streamlit) {
+          Streamlit.setFrameHeight(document.body.scrollHeight);
+        }
+      };
+
+      const runCommand = (cmd) => {
+        if (cmd === "createLink") {
+          const url = prompt("Enter link URL");
+          if (!url) {
+            return;
+          }
+          document.execCommand(cmd, false, url);
+        } else if (cmd === "formatBlock") {
+          document.execCommand(cmd, false, "blockquote");
+        } else {
+          document.execCommand(cmd, false, null);
+        }
+        editor.focus();
+        updatePlaceholder();
+      };
+
+      const sendValue = (action) => {
+        if (!window.Streamlit) {
+          return;
+        }
+        Streamlit.setComponentValue({
+          action: action,
+          html: editor.innerHTML,
+          text: editor.innerText || "",
+          nonce: Date.now(),
+        });
+      };
+
+      const onRender = (event) => {
+        const args = (event.detail && event.detail.args) || {};
+        editor.setAttribute(
+          "data-placeholder",
+          args.placeholder || "Add a rich-text annotation for this node."
+        );
+        applyValue(args.value);
+        setHeight();
+      };
+
+      document.querySelectorAll("[data-cmd]").forEach((btn) => {
+        btn.addEventListener("click", () => runCommand(btn.dataset.cmd));
+      });
+      editor.addEventListener("input", updatePlaceholder);
+      document.getElementById("annotation-save").addEventListener("click", () => {
+        sendValue("save");
+      });
+      document.getElementById("annotation-clear").addEventListener("click", () => {
+        editor.innerHTML = "";
+        updatePlaceholder();
+        sendValue("clear");
+      });
+
+      Streamlit.events.addEventListener(Streamlit.RENDER_EVENT, onRender);
+      Streamlit.setComponentReady();
+      setHeight();
+    </script>
+  </body>
+</html>

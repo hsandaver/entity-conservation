@@ -1,0 +1,1261 @@
+{
+  "version": 1,
+  "saved_at": "2026-01-31T23:50:17.125362Z",
+  "graph": {
+    "nodes": [
+      {
+        "id": "urn:marc:person:269fee57743a",
+        "label": "Giovanni Battista Piranesi",
+        "types": [
+          "Person"
+        ],
+        "metadata": {
+          "id": "urn:marc:person:269fee57743a",
+          "prefLabel": {
+            "en": "Giovanni Battista Piranesi"
+          },
+          "type": [
+            "Person"
+          ]
+        },
+        "edges": []
+      },
+      {
+        "id": "urn:marc:person:60b78ed33d2f",
+        "label": "Guercino",
+        "types": [
+          "Person"
+        ],
+        "metadata": {
+          "id": "urn:marc:person:60b78ed33d2f",
+          "prefLabel": {
+            "en": "Guercino"
+          },
+          "type": [
+            "Person"
+          ]
+        },
+        "edges": []
+      },
+      {
+        "id": "urn:marc:person:ed3d8c55d948",
+        "label": "Joseph Smith",
+        "types": [
+          "Person"
+        ],
+        "metadata": {
+          "id": "urn:marc:person:ed3d8c55d948",
+          "prefLabel": {
+            "en": "Joseph Smith"
+          },
+          "type": [
+            "Person"
+          ]
+        },
+        "edges": [
+          {
+            "source": "urn:marc:person:ed3d8c55d948",
+            "target": "urn:marc:work:6a9a0553cfb0",
+            "relationship": "relatedPerson",
+            "inferred": false,
+            "weight": null
+          }
+        ]
+      },
+      {
+        "id": "urn:marc:person:853bf3bef93f",
+        "label": "James Alipius Goold",
+        "types": [
+          "Person"
+        ],
+        "metadata": {
+          "id": "urn:marc:person:853bf3bef93f",
+          "prefLabel": {
+            "en": "James Alipius Goold"
+          },
+          "type": [
+            "Person"
+          ],
+          "annotation_html": "Provenance. Art Collector",
+          "annotation": "Pro enance. Ar Collec or"
+        },
+        "edges": [
+          {
+            "source": "urn:marc:person:853bf3bef93f",
+            "target": "urn:marc:work:f3c18e99d6f9",
+            "relationship": "relatedPerson",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "urn:marc:person:853bf3bef93f",
+            "target": "urn:marc:work:6a9a0553cfb0",
+            "relationship": "relatedPerson",
+            "inferred": false,
+            "weight": null
+          }
+        ]
+      },
+      {
+        "id": "urn:marc:conservation:e8aa72ccdf7b",
+        "label": "condition reviewed (20210903; acidic paper; undamaged)",
+        "types": [
+          "ConservationAction"
+        ],
+        "metadata": {
+          "id": "urn:marc:conservation:e8aa72ccdf7b",
+          "prefLabel": {
+            "en": "condition reviewed (20210903; acidic paper; undamaged)"
+          },
+          "type": [
+            "ConservationAction"
+          ],
+          "source": "pda",
+          "action": "condition reviewed",
+          "date": "20210903",
+          "status": "acidic paper; undamaged",
+          "institution": "AU-MeML",
+          "agent": "Huw Sandaver"
+        },
+        "edges": [
+          {
+            "source": "urn:marc:conservation:e8aa72ccdf7b",
+            "target": "urn:conservation:person:013228d4fbb7",
+            "relationship": "performedBy",
+            "inferred": false,
+            "weight": null
+          }
+        ]
+      },
+      {
+        "id": "urn:marc:conservation:68791c85f5b1",
+        "label": "will conserve (20210903)",
+        "types": [
+          "ConservationAction"
+        ],
+        "metadata": {
+          "id": "urn:marc:conservation:68791c85f5b1",
+          "prefLabel": {
+            "en": "will conserve (20210903)"
+          },
+          "type": [
+            "ConservationAction"
+          ],
+          "source": "pda",
+          "action": "will conserve",
+          "date": "20210903",
+          "institution": "AU-MeML"
+        },
+        "edges": []
+      },
+      {
+        "id": "urn:marc:conservation:9d2ae6a65911",
+        "label": "digitized (20210903)",
+        "types": [
+          "ConservationAction"
+        ],
+        "metadata": {
+          "id": "urn:marc:conservation:9d2ae6a65911",
+          "prefLabel": {
+            "en": "digitized (20210903)"
+          },
+          "type": [
+            "ConservationAction"
+          ],
+          "source": "pda",
+          "action": "digitized",
+          "date": "20210903",
+          "institution": "AU-MeML",
+          "notes": [
+            {
+              "classified_as": "Annotation",
+              "content": "A2 Book Scanner"
+            }
+          ],
+          "annotation": "A2 Book Scanner",
+          "annotation_html": "A2 Book Scanner",
+          "agent": "Huw Sandaver"
+        },
+        "edges": [
+          {
+            "source": "urn:marc:conservation:9d2ae6a65911",
+            "target": "urn:conservation:person:013228d4fbb7",
+            "relationship": "performedBy",
+            "inferred": false,
+            "weight": null
+          }
+        ]
+      },
+      {
+        "id": "urn:marc:conservation:9a8a0682d9ed",
+        "label": "housed (20210903)",
+        "types": [
+          "ConservationAction"
+        ],
+        "metadata": {
+          "id": "urn:marc:conservation:9a8a0682d9ed",
+          "prefLabel": {
+            "en": "housed (20210903)"
+          },
+          "type": [
+            "ConservationAction"
+          ],
+          "source": "pda",
+          "action": "housed",
+          "date": "20210903",
+          "method": "box",
+          "institution": "AU-MeML",
+          "notes": [
+            {
+              "classified_as": "Annotation",
+              "content": "Cus om made box"
+            }
+          ]
+        },
+        "edges": []
+      },
+      {
+        "id": "urn:marc:conservation:549c21dfb7b9",
+        "label": "retained (20210903)",
+        "types": [
+          "ConservationAction"
+        ],
+        "metadata": {
+          "id": "urn:marc:conservation:549c21dfb7b9",
+          "prefLabel": {
+            "en": "retained (20210903)"
+          },
+          "type": [
+            "ConservationAction"
+          ],
+          "source": "pda",
+          "action": "retained",
+          "date": "20210903",
+          "institution": "AU-MeML"
+        },
+        "edges": []
+      },
+      {
+        "id": "urn:marc:conservation:78ecac9d4d47",
+        "label": "transferred to optimal storage (20210903)",
+        "types": [
+          "ConservationAction"
+        ],
+        "metadata": {
+          "id": "urn:marc:conservation:78ecac9d4d47",
+          "prefLabel": {
+            "en": "transferred to optimal storage (20210903)"
+          },
+          "type": [
+            "ConservationAction"
+          ],
+          "source": "pda",
+          "action": "transferred to optimal storage",
+          "date": "20210903",
+          "institution": "AU-MeML",
+          "agent": "Mannix Library Special Collections"
+        },
+        "edges": [
+          {
+            "source": "urn:marc:conservation:78ecac9d4d47",
+            "target": "urn:conservation:person:77fca161c531",
+            "relationship": "performedBy",
+            "inferred": false,
+            "weight": null
+          }
+        ]
+      },
+      {
+        "id": "urn:marc:work:f3c18e99d6f9",
+        "label": "[Holy family with an angel who offers fruit to the Christ Child]",
+        "types": [
+          "Work"
+        ],
+        "metadata": {
+          "id": "urn:marc:work:f3c18e99d6f9",
+          "prefLabel": {
+            "en": "[Holy family with an angel who offers fruit to the Christ Child]"
+          },
+          "type": [
+            "Work"
+          ],
+          "source": "MARC21",
+          "title": "[Holy family with an angel who offers fruit to the Christ Child]",
+          "controlNumber": "on1250227149",
+          "controlNumberPrefix": "OCoLC",
+          "year": "1764",
+          "publicationPlace": [
+            "[In Roma] [Rome]"
+          ],
+          "publisher": [
+            "[Nella Stamperia Di Giovanni Generoso Salomoni]"
+          ],
+          "publicationDate": [
+            "[MDCCLXIV] [1764]"
+          ],
+          "genres": [
+            "etchings (prints)",
+            "Etching",
+            "Etchings.",
+            "Antique laid paper",
+            "Chainline",
+            "Watermark",
+            "Eaux-fortes (Gravures)"
+          ],
+          "physicalDescription": "1 print : etching with some engraving of a drawing, red and black ink, on cream laid paper ; plate mark 28.5 x 40.1 cm",
+          "notes": [
+            {
+              "classified_as": "Note",
+              "content": "After a drawing by Guercino."
+            },
+            {
+              "classified_as": "Note",
+              "content": "Title from Metropolitan Museum of Art."
+            },
+            {
+              "classified_as": "Note",
+              "content": "Lettering below image: Ex Collectione Joseph Smith."
+            },
+            {
+              "classified_as": "Note",
+              "content": "State from dating of watermark and comparison with another version."
+            },
+            {
+              "classified_as": "Note",
+              "content": "Plate 19 of: Raccolta di alcuni disegni del Barberi de Cento detto il Guercino, incisi in rame, e presentati al singolar merito del Sig. Tommaso Jenkins pittore ed accademico di S. Luca in atto di rispetto, e d'amicizia dall'architetto, e suo coaccademico Gio. Battista Piranesi, [1764]."
+            },
+            {
+              "classified_as": "Note",
+              "content": "Watermark: Fleur de lis."
+            }
+          ],
+          "583": [
+            {
+              "id": "urn:marc:conservation:e8aa72ccdf7b",
+              "action": "condition reviewed",
+              "date": "20210903",
+              "status": "acidic paper; undamaged",
+              "institution": "AU-MeML",
+              "agent": "Huw Sandaver"
+            },
+            {
+              "action": "will conserve",
+              "date": "20210903",
+              "source": "pda",
+              "institution": "AU-MeML",
+              "id": "urn:marc:conservation:68791c85f5b1"
+            },
+            {
+              "id": "urn:marc:conservation:9d2ae6a65911",
+              "action": "digitized",
+              "date": "20210903",
+              "institution": "AU-MeML",
+              "agent": "Huw Sandaver",
+              "notes": [
+                {
+                  "classified_as": "Annotation",
+                  "content": "A2 Book Scanner"
+                }
+              ]
+            },
+            {
+              "id": "urn:marc:conservation:9a8a0682d9ed",
+              "action": "housed",
+              "date": "20210903",
+              "method": "box",
+              "institution": "AU-MeML"
+            },
+            {
+              "action": "retained",
+              "date": "20210903",
+              "source": "pda",
+              "institution": "AU-MeML",
+              "id": "urn:marc:conservation:549c21dfb7b9"
+            },
+            {
+              "id": "urn:marc:conservation:78ecac9d4d47",
+              "action": "transferred to optimal storage",
+              "date": "20210903",
+              "institution": "AU-MeML",
+              "agent": "Mannix Library Special Collections"
+            }
+          ]
+        },
+        "edges": [
+          {
+            "source": "urn:marc:work:f3c18e99d6f9",
+            "target": "urn:marc:person:269fee57743a",
+            "relationship": "contributor",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "urn:marc:work:f3c18e99d6f9",
+            "target": "urn:marc:person:60b78ed33d2f",
+            "relationship": "contributor",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "urn:marc:work:f3c18e99d6f9",
+            "target": "urn:marc:person:ed3d8c55d948",
+            "relationship": "contributor",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "urn:marc:work:f3c18e99d6f9",
+            "target": "urn:marc:conservation:e8aa72ccdf7b",
+            "relationship": "conservationAction",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "urn:marc:work:f3c18e99d6f9",
+            "target": "urn:marc:conservation:68791c85f5b1",
+            "relationship": "conservationAction",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "urn:marc:work:f3c18e99d6f9",
+            "target": "urn:marc:conservation:9d2ae6a65911",
+            "relationship": "conservationAction",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "urn:marc:work:f3c18e99d6f9",
+            "target": "urn:marc:conservation:9a8a0682d9ed",
+            "relationship": "conservationAction",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "urn:marc:work:f3c18e99d6f9",
+            "target": "urn:marc:conservation:549c21dfb7b9",
+            "relationship": "conservationAction",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "urn:marc:work:f3c18e99d6f9",
+            "target": "urn:marc:conservation:78ecac9d4d47",
+            "relationship": "conservationAction",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "urn:marc:work:f3c18e99d6f9",
+            "target": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "relationship": "creator",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "urn:marc:work:f3c18e99d6f9",
+            "target": "urn:marc:work:6a9a0553cfb0",
+            "relationship": "isPartOf",
+            "inferred": false,
+            "weight": null
+          }
+        ]
+      },
+      {
+        "id": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+        "label": "Francesco Bartolozzi",
+        "types": [
+          "Person"
+        ],
+        "metadata": {
+          "sameAs": [
+            "http://viaf.org/viaf/7656202",
+            "http://id.worldcat.org/fast/83644",
+            "http://www.wikidata.org/entity/Q734889",
+            "https://isni.org/isni/0000000121196776",
+            "http://id.loc.gov/authorities/names/n81143854",
+            "http://d-nb.info/gnd/118849549",
+            "https://data.bnf.fr/ark:/12148/cb149544967",
+            "http://datos.bne.es/resource/XX939988",
+            "http://vocab.getty.edu/ulan/500032318",
+            "http://vocab.getty.edu/ulan/500032318-agent",
+            "http://www.idref.fr/030579899",
+            "http://data.bibliotheken.nl/doc/thes/p274145693",
+            "http://id.bnportugal.gov.pt/aut/catbnp/57730",
+            "http://libris.kb.se/resource/auth/267661"
+          ],
+          "bf:identifiedBy": [
+            {
+              "type": [
+                "bf:Identifier"
+              ],
+              "rdf:value": "ADV10205384",
+              "rdfs:label": "BAV ID"
+            },
+            {
+              "type": [
+                "bf:Identifier"
+              ],
+              "rdf:value": "a11219920",
+              "rdfs:label": "BNC ID"
+            },
+            {
+              "type": [
+                "bf:Identifier"
+              ],
+              "rdf:value": "n96610460",
+              "rdfs:label": "NUKAT ID"
+            },
+            {
+              "type": [
+                "bf:Identifier"
+              ],
+              "rdf:value": "xx0067851",
+              "rdfs:label": "NKC ID"
+            },
+            {
+              "type": [
+                "bf:Identifier"
+              ],
+              "rdf:value": "9810704392005606",
+              "rdfs:label": "PLWABN ID"
+            },
+            {
+              "type": [
+                "bf:Identifier"
+              ],
+              "rdf:value": "35214656",
+              "rdfs:label": "NLA ID"
+            },
+            {
+              "type": [
+                "bf:Identifier"
+              ],
+              "rdf:value": "103874147",
+              "rdfs:label": "SIMACOB ID"
+            }
+          ],
+          "employedBy": [
+            {
+              "type": [
+                "Role"
+              ],
+              "carriedOutBy": "https://id.oclc.org/worldcat/entity/E39PBJr7RXBFbvQYVPFTv6DH4q"
+            }
+          ],
+          "image": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Joshua_Reynolds_%281723-1792%29_-_Francesco_Bartolozzi_%281727%E2%80%931815%29_-_872094_-_National_Trust.jpg/681px-Joshua_Reynolds_%281723-1792%29_-_Francesco_Bartolozzi_%281727%E2%80%931815%29_-_872094_-_National_Trust.jpg"
+          ],
+          "relatedPerson": [
+            "https://id.oclc.org/worldcat/entity/E39PBJkxFcQhHV4CR9wT9r6dwC",
+            "https://id.oclc.org/worldcat/entity/E39RbgD6wmpJQB43tyrWPkWB33",
+            "https://id.oclc.org/worldcat/entity/E39PBJxCBr7CKmvyvB9WtT6BT3"
+          ],
+          "studentOf": [
+            "https://id.oclc.org/worldcat/entity/E39PBJwHhTw9jQMpFYYvdW9xDq",
+            "https://id.oclc.org/worldcat/entity/E39PBJkhFJ6pw93jm4vwfjC4v3",
+            "https://id.oclc.org/worldcat/entity/E39PBJg8DpcDJvXmHrd8mB9qwC"
+          ],
+          "memberOf": [
+            "https://id.oclc.org/worldcat/entity/E39QH7JmrPP7jPX9DrV7bwRDFg"
+          ],
+          "placeOfBirth": [
+            "https://id.oclc.org/worldcat/entity/E39PBJfRFFVbjpRXkV3pHqChHC"
+          ],
+          "placeOfDeath": [
+            "https://id.oclc.org/worldcat/entity/E39PBJdrKP7TrdqP8tC7ktcgKd"
+          ],
+          "residence": [
+            "https://id.oclc.org/worldcat/entity/E39QbtfRjHhmJhJhDHPgmh7m7B"
+          ],
+          "occupation": [
+            "https://id.worldcat.org/fast/817559"
+          ],
+          "fieldOfActivity": [
+            "https://id.worldcat.org/fast/912443",
+            "https://id.worldcat.org/fast/1050530",
+            "https://id.worldcat.org/fast/1076809"
+          ],
+          "@context": "https://id.oclc.org/api/context.json",
+          "id": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+          "dateOfBirth": [
+            {
+              "type": [
+                "time:Instant"
+              ],
+              "time:inDateTime": {
+                "type": [
+                  "time:DateTimeDescription"
+                ],
+                "time:day": {
+                  "type": "http://www.w3.org/2001/XMLSchema#gDay",
+                  "@value": "----25"
+                },
+                "time:year": {
+                  "type": "http://www.w3.org/2001/XMLSchema#gYear",
+                  "@value": "1727"
+                },
+                "time:month": {
+                  "type": "http://www.w3.org/2001/XMLSchema#gMonth",
+                  "@value": "--09"
+                },
+                "time:hasTRS": {
+                  "id": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+                },
+                "time:unitType": {
+                  "id": "time:unitDay"
+                }
+              },
+              "time:inXSDDateTimeStamp": {
+                "type": "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+                "@value": "1727-09-25T00:00:00Z"
+              }
+            }
+          ],
+          "dateOfDeath": [
+            {
+              "type": [
+                "time:Instant"
+              ],
+              "time:inDateTime": {
+                "type": [
+                  "time:DateTimeDescription"
+                ],
+                "time:day": {
+                  "type": "http://www.w3.org/2001/XMLSchema#gDay",
+                  "@value": "----02"
+                },
+                "time:year": {
+                  "type": "http://www.w3.org/2001/XMLSchema#gYear",
+                  "@value": "1815"
+                },
+                "time:month": {
+                  "type": "http://www.w3.org/2001/XMLSchema#gMonth",
+                  "@value": "--03"
+                },
+                "time:hasTRS": {
+                  "id": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+                },
+                "time:unitType": {
+                  "id": "time:unitDay"
+                }
+              },
+              "time:inXSDDateTimeStamp": {
+                "type": "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+                "@value": "1815-03-02T00:00:00Z"
+              }
+            }
+          ],
+          "prefLabel": {
+            "ca": "Francesco Bartolozzi",
+            "cs": "Francesco Bartolozzi",
+            "cy": "Francesco Bartolozzi",
+            "da": "Francesco Bartolozzi",
+            "de": "Francesco Bartolozzi",
+            "en": "Francesco Bartolozzi",
+            "es": "Francesco Bartolozzi",
+            "fi": "Francesco Bartolozzi",
+            "fr": "Francesco Bartolozzi",
+            "gl": "Francesco Bartolozzi",
+            "io": "Francesco Bartolozzi",
+            "it": "Francesco Bartolozzi",
+            "ja": "\u30d5\u30e9\u30f3\u30c1\u30a7\u30b9\u30b3\u30fb\u30d0\u30eb\u30c8\u30ed\u30c3\u30c4\u30a3",
+            "nb": "Francesco Bartolozzi",
+            "nl": "Francesco Bartolozzi",
+            "nn": "Francesco Bartolozzi",
+            "pl": "Francesco Bartolozzi",
+            "pt": "Francesco Bartolozzi",
+            "ru": "\u0424\u0440\u0430\u043d\u0447\u0435\u0441\u043a\u043e \u0411\u0430\u0440\u0442\u043e\u043b\u043e\u0446\u0446\u0438",
+            "sl": "Francesco Bartolozzi",
+            "sq": "Francesco Bartolozzi",
+            "sv": "Francesco Bartolozzi",
+            "tg": "\u0424\u0440\u0430\u043d\u0447\u0435\u0441\u043a\u043e \u0411\u0430\u0440\u0442\u043e\u043b\u043e\u0437\u0437\u0438",
+            "uk": "\u0424\u0440\u0430\u043d\u0447\u0435\u0441\u043a\u043e \u0411\u0430\u0440\u0442\u043e\u043b\u043e\u0446\u0446\u0456",
+            "ast": "Francesco Bartolozzi",
+            "sco": "Francesco Bartolozzi",
+            "en-gb": "Francesco Bartolozzi",
+            "pt-br": "Francesco Bartolozzi",
+            "tg-latn": "Francesko Bartolozzi"
+          },
+          "altLabel": {
+            "de": [
+              "Bartolozzi"
+            ],
+            "en": [
+              "R. A. Bartolozzi",
+              "R.A. Bartolozzi",
+              "Bartholozzi",
+              "Bartolozzi",
+              "Frao. Bartolozzi",
+              "Francisco Bartolozzi",
+              "F. Bartolozzi",
+              "Fran\u00e7ois Bartolozzi"
+            ],
+            "pt": [
+              "Francisco Bartolozzi"
+            ],
+            "sv": [
+              "Bartolozzi"
+            ]
+          },
+          "givenName": {
+            "en": [
+              "Francesco"
+            ]
+          },
+          "surname": {
+            "en": [
+              "Bartolozzi"
+            ]
+          },
+          "type": [
+            "Person"
+          ],
+          "description": {
+            "ar": "\u0641\u0646\u0627\u0646 \u0625\u064a\u0637\u0627\u0644\u064a",
+            "bn": "\u0987\u09a4\u09be\u09b2\u09c0\u09af\u09bc \u09b6\u09bf\u09b2\u09cd\u09aa\u09c0",
+            "ca": "artista itali\u00e0",
+            "cs": "italsk\u00fd rytec",
+            "de": "italienischer Kupferstecher",
+            "en": "Italian engraver celebrated for refining the stipple, or \u201ccrayon\u201d technique, which imbued his prints with the soft, nuanced qualities of chalk drawings. Educated in Florence and honed in Venice, he reached artistic prominence in London as Engraver to King George\u00a0III and a founding member of the Royal Academy of Arts, leaving a prolific legacy of over 2,000 finely crafted plates that bridge the classic elegance of Renaissance drawing with innovative modern printmaking",
+            "es": "artista italiano",
+            "et": "Itaalia kunstnik",
+            "fa": "\u0646\u0642\u0627\u0634 \u0627\u06cc\u062a\u0627\u0644\u06cc\u0627\u06cc\u06cc",
+            "fr": "graveur italien",
+            "gl": "artista italiano",
+            "he": "\u05d0\u05de\u05df \u05d0\u05d9\u05d8\u05dc\u05e7\u05d9",
+            "it": "disegnatore, pittore e incisore italiano",
+            "nl": "Italiaans kunstschilder",
+            "ro": "artist italian",
+            "ru": "\u0438\u0442\u0430\u043b\u044c\u044f\u043d\u0441\u043a\u0438\u0439 \u0433\u0440\u0430\u0432\u0451\u0440",
+            "sq": "artist italian",
+            "uk": "\u0456\u0442\u0430\u043b\u0456\u0439\u0441\u044c\u043a\u0438\u0439 \u0433\u0440\u0430\u0432\u0435\u0440",
+            "ast": "grabador brit\u00e1nicu (1725\u20131815)",
+            "en-ca": "Italian artist",
+            "en-gb": "Italian artist",
+            "pt-br": "artista italiano"
+          }
+        },
+        "edges": [
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://id.oclc.org/worldcat/entity/E39PBJkxFcQhHV4CR9wT9r6dwC",
+            "relationship": "relatedPerson",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://id.oclc.org/worldcat/entity/E39RbgD6wmpJQB43tyrWPkWB33",
+            "relationship": "relatedPerson",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://id.oclc.org/worldcat/entity/E39PBJxCBr7CKmvyvB9WtT6BT3",
+            "relationship": "relatedPerson",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://id.oclc.org/worldcat/entity/E39QH7JmrPP7jPX9DrV7bwRDFg",
+            "relationship": "memberOf",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://id.oclc.org/worldcat/entity/E39PBJfRFFVbjpRXkV3pHqChHC",
+            "relationship": "placeOfBirth",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://id.oclc.org/worldcat/entity/E39PBJdrKP7TrdqP8tC7ktcgKd",
+            "relationship": "placeOfDeath",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://id.oclc.org/worldcat/entity/E39QbtfRjHhmJhJhDHPgmh7m7B",
+            "relationship": "residence",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "http://viaf.org/viaf/7656202",
+            "relationship": "sameAs",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "http://id.worldcat.org/fast/83644",
+            "relationship": "sameAs",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "http://www.wikidata.org/entity/Q734889",
+            "relationship": "sameAs",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://isni.org/isni/0000000121196776",
+            "relationship": "sameAs",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "http://id.loc.gov/authorities/names/n81143854",
+            "relationship": "sameAs",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "http://d-nb.info/gnd/118849549",
+            "relationship": "sameAs",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://data.bnf.fr/ark:/12148/cb149544967",
+            "relationship": "sameAs",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "http://datos.bne.es/resource/XX939988",
+            "relationship": "sameAs",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "http://vocab.getty.edu/ulan/500032318",
+            "relationship": "sameAs",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "http://vocab.getty.edu/ulan/500032318-agent",
+            "relationship": "sameAs",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "http://www.idref.fr/030579899",
+            "relationship": "sameAs",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "http://data.bibliotheken.nl/doc/thes/p274145693",
+            "relationship": "sameAs",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "http://id.bnportugal.gov.pt/aut/catbnp/57730",
+            "relationship": "sameAs",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "http://libris.kb.se/resource/auth/267661",
+            "relationship": "sameAs",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://id.oclc.org/worldcat/entity/E39PBJwHhTw9jQMpFYYvdW9xDq",
+            "relationship": "studentOf",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://id.oclc.org/worldcat/entity/E39PBJkhFJ6pw93jm4vwfjC4v3",
+            "relationship": "studentOf",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://id.oclc.org/worldcat/entity/E39PBJg8DpcDJvXmHrd8mB9qwC",
+            "relationship": "studentOf",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://id.oclc.org/worldcat/entity/E39PBJr7RXBFbvQYVPFTv6DH4q",
+            "relationship": "employedBy",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://id.worldcat.org/fast/817559",
+            "relationship": "occupation",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://id.worldcat.org/fast/912443",
+            "relationship": "fieldOfActivity",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://id.worldcat.org/fast/1050530",
+            "relationship": "fieldOfActivity",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "https://id.worldcat.org/fast/1076809",
+            "relationship": "fieldOfActivity",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC",
+            "target": "urn:marc:work:6a9a0553cfb0",
+            "relationship": "contributor",
+            "inferred": false,
+            "weight": null
+          }
+        ]
+      },
+      {
+        "id": "urn:conservation:person:013228d4fbb7",
+        "label": "Huw Sandaver",
+        "types": [
+          "Person"
+        ],
+        "metadata": {
+          "id": "urn:conservation:person:013228d4fbb7",
+          "prefLabel": {
+            "en": "Huw Sandaver"
+          },
+          "type": [
+            "Person"
+          ],
+          "source": "Manual"
+        },
+        "edges": []
+      },
+      {
+        "id": "urn:conservation:person:77fca161c531",
+        "label": "Mannix Library Special Collections",
+        "types": [
+          "Organization"
+        ],
+        "metadata": {
+          "id": "urn:conservation:person:77fca161c531",
+          "prefLabel": {
+            "en": "Mannix Library Special Collections"
+          },
+          "type": [
+            "Person"
+          ],
+          "source": "Manual"
+        },
+        "edges": []
+      },
+      {
+        "id": "urn:marc:work:6a9a0553cfb0",
+        "label": "Raccolta di alcuni disegni del Barberi de Cento detto il Guercino...",
+        "types": [
+          "Work"
+        ],
+        "metadata": {
+          "id": "urn:marc:work:6a9a0553cfb0",
+          "prefLabel": {
+            "en": "Raccolta di alcuni disegni del Barberi de Cento detto il Guercino..."
+          },
+          "type": [
+            "Work"
+          ],
+          "source": "MARC21",
+          "title": "Raccolta di alcuni disegni del Barberi de Cento detto il Guercino, incisi in rame, e presentati al singolar merito del Sig. Tommaso Jenkins pittore ed accademico di S. Luca in atto di rispetto, e d'amicizia dall'architetto, e suo coaccademico Gio. Battista Piranesi.",
+          "controlNumber": "ocm08811830",
+          "controlNumberPrefix": "OCoLC",
+          "year": "1837",
+          "publicationPlace": [
+            "[Parigi]"
+          ],
+          "publisher": [
+            "[Firmin Didot]"
+          ],
+          "publicationDate": [
+            "[1837?]"
+          ],
+          "language": [
+            "ita",
+            "fre"
+          ],
+          "physicalDescription": "85 plates on 55 leaves ; 65 x 90 cm",
+          "notes": [
+            {
+              "classified_as": "Note",
+              "content": "Engraved title page, 1764."
+            },
+            {
+              "classified_as": "Note",
+              "content": "\"The majority of the plates in this publication of G.B. Piranesi were engraved by Bartolozzi\". The frontispiece and 3 plates etched by Piranesi are \"nos.926b and 931a and b in Paris ed. of Firmin-Didot\". Plates bear the stamp of the Regia Calcografia, indicating issue no earlier than 1870. Hind (1967, c1922)--p. 5,33,86. Focillon (1967, ed. by Calvesi & Monferini) p. 363-4."
+            },
+            {
+              "classified_as": "Note",
+              "content": "Plates dual-numbered 917-971 and, in 2 segments, 1-45 and 1-40."
+            },
+            {
+              "classified_as": "Note",
+              "content": "The engraved title page (949a)--of the 2nd segment: Recueil d'estampes d'apre\u0300s les desseins de Fr. Barbieri dit Guercino qui n'ont pas encore e\u0301te\u0301 grave\u0301es ... Par A. Bartsch. F. Piranesi seul et unique proprie\u0301taire de cet ouvrage, l'a re\u0301uni a\u0300 sa Calcographie. a\u0300 Paris l'an 1808."
+            },
+            {
+              "classified_as": "Note",
+              "content": "Includes Polanzani portrait of G.B. Piranesi."
+            },
+            {
+              "classified_as": "Note",
+              "content": "Volume 13, pt. 2 of a composite set uniformly bound, and lettered \"Piranesi.\""
+            }
+          ]
+        },
+        "edges": [
+          {
+            "source": "urn:marc:work:6a9a0553cfb0",
+            "target": "urn:marc:person:269fee57743a",
+            "relationship": "author",
+            "inferred": false,
+            "weight": null
+          },
+          {
+            "source": "urn:marc:work:6a9a0553cfb0",
+            "target": "urn:marc:person:60b78ed33d2f",
+            "relationship": "contributor",
+            "inferred": false,
+            "weight": null
+          }
+        ]
+      }
+    ]
+  },
+  "id_to_label": {
+    "urn:marc:person:269fee57743a": "Giovanni Battista Piranesi",
+    "urn:marc:person:60b78ed33d2f": "Guercino",
+    "urn:marc:person:ed3d8c55d948": "Joseph Smith",
+    "urn:marc:person:853bf3bef93f": "James Alipius Goold",
+    "urn:marc:conservation:e8aa72ccdf7b": "condition reviewed (20210903; acidic paper; undamaged)",
+    "urn:marc:conservation:68791c85f5b1": "will conserve (20210903)",
+    "urn:marc:conservation:9d2ae6a65911": "digitized (20210903)",
+    "urn:marc:conservation:9a8a0682d9ed": "housed (20210903)",
+    "urn:marc:conservation:549c21dfb7b9": "retained (20210903)",
+    "urn:marc:conservation:78ecac9d4d47": "transferred to optimal storage (20210903)",
+    "urn:marc:work:f3c18e99d6f9": "[Holy family with an angel who offers fruit to the Christ Child]",
+    "https://id.oclc.org/worldcat/entity/E39PBJbM6YX6QCk3dtYr9RtxjC": "Francesco Bartolozzi",
+    "urn:conservation:person:013228d4fbb7": "Huw Sandaver",
+    "urn:conservation:person:77fca161c531": "Mannix Library Special Collections",
+    "urn:marc:work:6a9a0553cfb0": "Raccolta di alcuni disegni del Barberi de Cento detto il Guercino..."
+  },
+  "node_positions": {},
+  "annotations": {
+    "urn:marc:person:853bf3bef93f": "Pro enance. Ar Collec or",
+    "urn:marc:conservation:9d2ae6a65911": "A2 Book Scanner"
+  },
+  "annotations_html": {
+    "urn:marc:person:853bf3bef93f": "Provenance. Art Collector",
+    "urn:marc:conservation:9d2ae6a65911": "A2 Book Scanner"
+  },
+  "selection": {
+    "selected_node": "urn:marc:work:f3c18e99d6f9",
+    "selected_relationships": [
+      "fieldOfActivity",
+      "residence",
+      "employedBy",
+      "relatedPerson",
+      "placeOfBirth",
+      "studentOf",
+      "author",
+      "creator",
+      "contributor",
+      "conservationAction",
+      "memberOf",
+      "sameAs",
+      "placeOfDeath",
+      "isPartOf",
+      "occupation",
+      "performedBy"
+    ],
+    "shortest_path": null
+  },
+  "filters": {
+    "filtered_types": [
+      "ConservationAction",
+      "Organization",
+      "Person",
+      "Work"
+    ],
+    "filtered_inferred_types": [],
+    "property_filter": {
+      "property": "",
+      "value": ""
+    },
+    "search_term": "",
+    "sparql_query": "",
+    "role_filters": [],
+    "anomaly_filters": []
+  },
+  "view": {
+    "show_labels": true,
+    "smart_labels": true,
+    "label_zoom_threshold": 1.1,
+    "reduce_motion": false,
+    "motion_intensity": 45,
+    "node_animations": [
+      "focus",
+      "neighbors",
+      "search"
+    ],
+    "node_animation_strength": 30,
+    "enable_physics": true,
+    "focus_context": true,
+    "edge_semantics": true,
+    "community_detection": true,
+    "physics_preset": "Default (Balanced)",
+    "physics_params": {
+      "gravity": -50,
+      "centralGravity": 0.01,
+      "springLength": 150,
+      "springStrength": 0.08
+    },
+    "performance_mode": false,
+    "performance_mode_applied": false,
+    "performance_backup": {}
+  },
+  "meta": {
+    "export_title": "Conservation Actions for \"Holy Family With an Angel Who Offers Fruit to the Christ Child\"",
+    "workspace_name": "Holy Family With an Angel Conservation"
+  },
+  "appearance": {
+    "node_type_colors": {
+      "AdministrativeArea": "#A7C5BD",
+      "ConservationAction": "#C98F52",
+      "Event": "#B56576",
+      "Music": "#2A9D8F",
+      "Organization": "#3D5A80",
+      "Person": "#E07A5F",
+      "Place": "#81B29A",
+      "StillImage": "#F2CC8F",
+      "Unknown": "#C9C6BE",
+      "Work": "#4D8DA8"
+    },
+    "relationship_colors": {
+      "relatedPerson": "#E07A5F",
+      "influencedBy": "#E9C46A",
+      "memberOf": "#3D5A80",
+      "succeededBy": "#B56576",
+      "precededBy": "#6D597A",
+      "relatedOrganization": "#457B9D",
+      "headquarters": "#2A9D8F",
+      "administrativelyPartOf": "#4D8DA8",
+      "placeOfBirth": "#81B29A",
+      "placeOfDeath": "#6C8F6B",
+      "residence": "#A7C5BD",
+      "draftsman": "#C76D4B",
+      "depicts": "#F4A261",
+      "relatedWork": "#70B7B2",
+      "conservationAction": "#C98F52",
+      "performedBy": "#4F6D7A",
+      "creator": "#E07A5F",
+      "author": "#355070",
+      "contributor": "#7AA4C1",
+      "associatedWith": "#9A8F5C",
+      "sameAs": "#5C5F66",
+      "child": "#F7B2A0",
+      "sibling": "#F2D388",
+      "spouse": "#B56576",
+      "studentOf": "#F4A261",
+      "employedBy": "#2A9D8F",
+      "occupation": "#84A59D",
+      "fieldOfActivity": "#E9C46A",
+      "educatedAt": "#4D8DA8",
+      "foundedBy": "#C76D4B",
+      "containedInPlace": "#6C8F6B",
+      "owner": "#3D5A80",
+      "isPartOf": "#457B9D",
+      "hasPart": "#8D99AE",
+      "relatedPlace": "#A7C5BD",
+      "analysisOf": "#6D597A",
+      "dedicatee": "#F7B2A0",
+      "illustrator": "#E07A5F",
+      "artist": "#B56576",
+      "editor": "#9A8F5C",
+      "designer": "#F4A261",
+      "composer": "#9C6644",
+      "translator": "#7AA4C1",
+      "inspiredBy": "#E9C46A"
+    },
+    "graph_background": {
+      "radial_1": "#E07A5F",
+      "radial_2": "#2A9D8F",
+      "linear_1": "#FCFAF6",
+      "linear_2": "#F4EFE6"
+    },
+    "type_icons": true,
+    "community_colors": [
+      "#3D5A80",
+      "#E07A5F",
+      "#2A9D8F",
+      "#F4A261",
+      "#6D597A",
+      "#84A59D",
+      "#F2D388",
+      "#B56576",
+      "#7AA4C1",
+      "#5C5F66"
+    ],
+    "community_labels": [
+      "Community 1",
+      "Community 2",
+      "Community 3",
+      "Community 4",
+      "Community 5",
+      "Community 6",
+      "Community 7",
+      "Community 8",
+      "Community 9",
+      "Community 10"
+    ],
+    "community_locks": {},
+    "community_lock_labels": {}
+  },
+  "analytics": {
+    "centrality_measures": null,
+    "graph_embeddings": null,
+    "textual_semantic_embeddings": null
+  }
+}
